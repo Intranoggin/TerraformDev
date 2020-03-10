@@ -34,36 +34,36 @@ At [this commit](https://github.com/Intranoggin/TerraformDev/tree/acff91af4ee59f
     rerun this command to reinitialize your working directory. If you forget, other
     commands will detect it and remind you to do so if necessary.[0m
 
-    PS C:\code\TerraformDev> terraform plan
-    [0m[1mRefreshing Terraform state in-memory prior to plan...[0m
-    The refreshed state will be used to calculate this plan, but will not be
-    persisted to local or remote state storage.
-    [0m
+PS C:\code\TerraformDev> terraform plan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
 
-    ------------------------------------------------------------------------
 
-    An execution plan has been generated and is shown below.
-    Resource actions are indicated with the following symbols:
-    [32m+[0m create
-    [0m
-    Terraform will perform the following actions:
+------------------------------------------------------------------------
 
-    [1m  # azurerm_resource_group.rg[0m will be created[0m[0m
-    [0m  [32m+[0m[0m resource "azurerm_resource_group" "rg" {
-        [32m+[0m [0m[1m[0mid[0m[0m       = (known after apply)
-        [32m+[0m [0m[1m[0mlocation[0m[0m = "centralus"
-        [32m+[0m [0m[1m[0mname[0m[0m     = "tfTFRG"
-        [32m+[0m [0m[1m[0mtags[0m[0m     = {
-            [32m+[0m [0m"Dept"        = "Engineering"
-            [32m+[0m [0m"Environment" = "Terraform Dev"
-            }
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # azurerm_resource_group.rg will be created
+  + resource "azurerm_resource_group" "rg" {
+      + id       = (known after apply)
+      + location = "centralus"
+      + name     = "tfTFRG"
+      + tags     = {
+          + "Dept"        = "Engineering"
+          + "Environment" = "Terraform Dev"
         }
+    }
 
-    [0m[1mPlan:[0m 1 to add, 0 to change, 0 to destroy.[0m
+Plan: 1 to add, 0 to change, 0 to destroy.
 
-    ------------------------------------------------------------------------
+------------------------------------------------------------------------
 
-    Note: You didn't specify an "-out" parameter to save this plan, so Terraform
-    can't guarantee that exactly these actions will be performed if
-    "terraform apply" is subsequently run.
+Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+can't guarantee that exactly these actions will be performed if
+"terraform apply" is subsequently run.
 ```
