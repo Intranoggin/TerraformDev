@@ -1,8 +1,12 @@
 variable "location" {}
 
-variable "tags" {
-    type = "map"
+variable "prefix" {
+    type = string
+    default = "my"
+ }
 
+variable "tags" {
+    type = map(string)
     default = {
         Environment = "Terraform Dev"
         Dept = "Engineering"
@@ -19,10 +23,7 @@ variable "tags" {
 #     description = "Password must meet Azure complexity requirements"
 # }
 
-# variable "prefix" {
-#     type = "string"
-#     default = "my"
-# }
+
 
 # variable "sku" {
 #     default = {
