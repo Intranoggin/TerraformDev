@@ -1,8 +1,13 @@
-variable "location" {}
+variable "location"{}
 
-variable "prefix" {
+variable "prefix"{
     type = string
     default = "my"
+ }
+
+ variable "environment"{
+     type = string
+     default = "Dev"
  }
 
 variable "tags" {
