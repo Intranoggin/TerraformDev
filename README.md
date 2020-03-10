@@ -13,5 +13,4 @@ az account list
 
 az account set -subscription="GUID"
 
-The initial files for this project were taken from https://learn.hashicorp.com/terraform/azure/variables_az
-
+The initial files for this project were taken from https://learn.hashicorp.com/terraform/azure/variables_az and then quickly cut back to just create a resource group. However, that link will explain how variables are defined and referenced between files. Updates beyond this will come from documentation using the 2.+ documentation here: https://registry.terraform.io/providers/hashicorp/azurerm/2.0.0/docs/resources/template_deployment 
