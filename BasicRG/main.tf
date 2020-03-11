@@ -6,7 +6,7 @@ provider "azurerm" {
 
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
-    name     = "${var.prefix}TerraformRG${var.environment}"
+    name     = "${var.prefix}BasicRG${var.environment}"
     location = var.location
     tags     = var.tags
 }

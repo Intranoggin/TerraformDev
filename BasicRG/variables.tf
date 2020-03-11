@@ -14,7 +14,7 @@ variable "tags" {
     type = map(string)
     default = {
         Environment = "Terraform Dev"
-        Dept = "Engineering"
+        Dept = "Basic"
   }
 }
 
