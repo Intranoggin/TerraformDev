@@ -15,5 +15,5 @@ az account set -subscription="GUID"
 
 Teamplates:
 
-- [BasicRG](./BasicRG/
+- [BasicRG](./BasicRG/)
 - [BasicWebApp](./BasicWebApp/)
