@@ -12,7 +12,7 @@ resource "azurerm_resource_group" "BasicWebApp" {
 }
 
 resource "azurerm_app_service_plan" "BasicWebApp" {
-    name     = "${var.prefix}basicwebappplan${var.environment}"
+    name     = "${var.prefix}BasicWebAppPlan${var.environment}"
     location = azurerm_resource_group.BasicWebApp.location
     resource_group_name = azurerm_resource_group.BasicWebApp.name
     tags     = var.tags
@@ -24,7 +24,7 @@ resource "azurerm_app_service_plan" "BasicWebApp" {
 }
 
 resource "azurerm_app_service" "BasicWebApp" {
-  name                = "${var.prefix}basicwebappservice${var.environment}"
+  name                = "${var.prefix}BasicWebAppService${var.environment}"
   location            = azurerm_resource_group.BasicWebApp.location
   resource_group_name = azurerm_resource_group.BasicWebApp.name
   app_service_plan_id = azurerm_app_service_plan.BasicWebApp.id
